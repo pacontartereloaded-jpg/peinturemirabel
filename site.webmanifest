@@ -1,0 +1,14 @@
+{
+  "name": "Peinture Mirabel — Peintres en bâtiment",
+  "short_name": "Peinture Mirabel",
+  "description": "Peintres en bâtiment à Mirabel, spécialisés en peinture après construction et grands volumes.",
+  "lang": "fr-CA",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fafbfc",
+  "theme_color": "#3b5266",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
