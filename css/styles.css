@@ -436,6 +436,34 @@ button { font-family: inherit; }
   color: var(--gold-soft);
   font-size: 0.7rem;
 }
+/* Before/After hover swap */
+.galerie-grid figure.ba { position: relative; }
+.galerie-grid figure.ba .ba-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.galerie-grid figure.ba:hover .ba-before { opacity: 1; }
+.galerie-grid figure.ba:hover .ba-after { transform: none; }
+.galerie-grid figure.ba:hover img { transform: none; }
+.galerie-grid .ba-hint {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(15, 23, 34, 0.86);
+  color: var(--gold-soft);
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  z-index: 2;
+}
 
 /* ================== PROCESS (4 phases horizontal track) ================== */
 .process-track {
